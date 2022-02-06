@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as essentials from 'sk-essentials';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sk-essentials-test-angular';
+  
+  constructor() {
+    const msg = essentials.merci();
+    alert(msg);
+  }
 }
